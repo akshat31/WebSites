@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TRUELIP TECHNOCRATES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+
+<script type="text/javascript">
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper" class="home-page">
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">     
+        <p class="pull-left hidden-xs"><i class="fa fa-envelope"></i><span>truelip.technocrates@gmail.com</span></p>
+        <p class="pull-right"><i class="fa fa-phone"></i>9630089006</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- start header -->
+    <header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header" style="margin-bottom:25px;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo01.png" alt="logo"  class="img-responsive"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li> 
+                         <!--<li class="dropdown">
+                        <a href="about.html" data-toggle="dropdown" class="dropdown-toggle">About Us<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Company</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">News</a></li> 
+                            <li><a href="#">Investors</a></li>
+                        </ul>
+                    </li>--> 
+                        <li><a href="services.html">Services</a></li>
+                        <li class="dropdown">
+                        <a href="about.html" data-toggle="dropdown" class="dropdown-toggle active">Products<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li onclick="smoothScroll(document.getElementById('product01'))" ><a href="#">CCTV Camera</a></li>
+                            <li onclick="smoothScroll(document.getElementById('product02'))" ><a href="#">Access control and attendance solution</a></li>
+                            <li onclick="smoothScroll(document.getElementById('product03'))" ><a href="#">electronic private automatic branch exchange</a></li> 
+                            <li onclick="smoothScroll(document.getElementById('product04'))" ><a href="#">Public address system</a></li>
+                            <li onclick="smoothScroll(document.getElementById('product05'))" ><a href="#">GPS security and tracking system</a></li>
+                            <li onclick="smoothScroll(document.getElementById('product06'))" ><a href="#product06">Smart home solution</a></li>
+                            <li onclick="smoothScroll(document.getElementById('product07'))" ><a href="#">Interactive White Boards</a></li>
+                            <li onclick="smoothScroll(document.getElementById('product08'))" ><a href="#">Software Licensing Services</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header><!-- end header -->
+    <section id="inner-headline">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pageTitle">PRODUCTS</h2>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="content">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row showcase-section">
+                
+                <div class="col-md-6" id="product01">
+                    <div class="about-text">
+                        <h3>CCTV Cameras</h3>
+                        <p>We deal in CCTV & IP camera system of leading brands .We have earned an impeccable reputation among the CCTV camera clients in Chhattishgarh - Odisha region, which is credited to the quality and performance of our installations related to CCTV cameras and other electronic saftey systems.<br>
+                        Our technical expertise also allows us to provide the communications infrastructure for CCTV systems like Standard</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/g001.png" alt="showcase image" style="border:black solid 2px;" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row showcase-section">
+                <div class="col-md-6">
+                    <img src="img/g002.jpg" alt="showcase image" class="img-responsive">
+                </div>
+                <div class="col-md-6" id="product02">
+                    <div class="about-text">
+                        <h3>Access Control & Attendance Solutions</h3>
+                        <p>We offer a wide range of Access Control and Attandance System to moniter and limit the access of yours homes offices, schools banks hotals ,Factories and zones thereof .We bring to you thr newest technologies of access control that integrates GPRS and IP network services<br>
+                        Depending upon the type of application and number of users we can suggest you the most appropriate solutions to effectively manage the access and attandance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row showcase-section">
+
+                <div class="col-md-6" id="product03">
+                    <div class="about-text">
+                        <h3>Electronic Private Automatic Branch Exchange</h3>
+                        <p>Truelip Technocrates is an authorised dealer of Panasonic Communication Systems which is again a market leader in the field of PBX and provides the most richfeatured communication system with lowest maintainance costs.Scalability and expandability being key features of these products , they allow you to add newer features to the existing system as and when required and thus always remain a part of our business growth<br>
+                        We are well versued in a wide spectrum of projects ranging from small busainess office to complete call center setups</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/g003.jpg" alt="showcase image" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row showcase-section">
+                <div class="col-md-6" id="product04">
+                    <img src="img/g004.jpg" alt="showcase image" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h3>Public Address System</h3>
+                        <p>We offer PA systems for showrooms, factories , hotals restrudents, educational institutions , research institute, railways, police , religious places etc. our range of solutions for PA Systems include:<br>
+                        Building PA Systems , Conferance Systems Face to Face ,Enquiry Systems , Wireless PA Systems, & Power podiums</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row showcase-section">
+
+                <div class="col-md-6" id="product05">
+                    <div class="about-text">
+                        <h3>GPS Security & Tracking Solution</h3>
+                        <p>We are an authorised of fastrackerz GPS Based Tracking Systems that help the logitic and transport Operators improve 5P's of their busainess namely Productivity, Proficiency, Participation & Profitability. Our GPS tracking solutions come with a wide variety of solutions for customers that enlist:
+                        Live GPS Tracking,
+                        History Reports,
+                        Fuel Monetring,
+                        Route Mapping,
+                        Landmarking,
+                        Camera Surveillance,
+                        Our GPS Tracking solutions are widely in use by business like logistics Transporters Educational Institutes,Tours & Travel, Security, Agencies , Hotels , etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/g005.jpg" alt="showcase image" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row showcase-section">
+                <div class="col-md-6">
+                    <img src="img/g006.jpg" alt="showcase image" style="border:black solid 2px;" class="img-responsive">
+                </div>
+                <div class="col-md-6" id="product06">
+                    <div class="about-text">
+                        <h3>Smart Home Solutions</h3>
+                        <p>With the emergence of smart home solutions the security that was earlier being delivered upto buildings has now been extended to the homes Broad range of security features now limits most of the threats like instrusion, Glass breakage, Gas leakage,Fire Unauthorised door opeaning and report them easiy through various means like Audio-Visual Sireans SMS Email and Auto call Connect This solutions can be well managed through applications on your Mobile/Tablets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row showcase-section">
+                
+                <div class="col-md-6" id="product07">
+                    <div class="about-text">
+                        <h3>Intrective White Boards</h3>
+                        <p>An interactive whiteboard (IWB) is a large interactive display that connects to a computer. A projector projects the computer's desktop onto the board's surface where users control the computer using a pen, finger, stylus, or other device. The board is typically mounted to a wall or floor stand.<br>
+                        It can either be a standalone touchscreen computer used independently to perform tasks and operations, or a connectable apparatus used as a touchpad to control computers from a projector. They are used in a variety of settings, including classrooms at all levels of education, in corporate board rooms and work groups, in training rooms for professional sports coaching, in broadcasting studios, and others.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/g007.jpg" alt="showcase image" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+    <section class="section-padding">
+        <div class="container">
+            <div class="row showcase-section">
+                <div class="col-md-6">
+                    <img src="img/g008.jpg" alt="showcase image" class="img-responsive">
+                </div>
+                <div class="col-md-6" id="product08">
+                    <div class="about-text">
+                        <h3>Software Licensing Services</h3>
+                        <p>We also provide software licence distribution and management as our core  business in most situations we undertake this activity concurrently with our other business activity. The type of software licences that we distribute and managed are primrily proprietary software licences like those of microsoft, Adobe , Autodesk, Coral, etc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <div class="widget">
+                    <h5 class="widgetheading">About</h5>
+                    <!--<ul class="link-list">
+                        <li><a href="#"> demo data demo data demo data demo data demo data demo data demo data demo data</a></li>
+                        <li><a href="#"> demo data demo data demo data demo data demo data demo data demo data demo data demo data</a></li>
+                        <li><a href="#"> demo data demo data demo data demo data demo data demo data demo data demo data demo data</a></li>
+                    </ul>-->
+                    <p>We are an innovation based company providing electronic automation services for Homes,Office,Industries and Public Places.Our services include implementation and management of High Quality Surveillance Systems,Smart Homes Solutions & Smart Office Execution.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="widget">
+                    <h5 class="widgetheading">Home Solution</h5>
+                    <!--<ul class="link-list">
+                        <li><a href="#"> demo data demo data demo data demo data demo data demo data</a></li>
+                        <li><a href="#"> demo data demo data demo data demo data demo data demo data</a></li>
+                        <li><a href="#"> demo data demo data demo data demo data demo data demo data demo data</a></li>
+                    </ul>-->
+                    <p>To sleep soundly, you need peace of mind. You need to know that what you value most—your home, your assets, and your family—are safe and secure. From fire, theft and flood protection, to services that keep families connected,truelip technocrates offers effective solutions to help you protect your safety and your property.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3" style="padding-left:85px;">
+                <div class="widget">
+                    <h5 class="widgetheading">Quick Links</h5>
+                    <ul class="link-list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="widget">
+                    <h5 class="widgetheading">Our Contact</h5>
+                    <address>
+                    <strong>TRUELIP TECHNOCRATES</strong><br>
+                    First Floor, Plot No: 28/13,<br>
+                     Nehru Nagar(EAST),Bhilai(C.G)</address>
+                    <p>
+                        <i class="fa fa-phone"></i>&nbsp 9630089006<br>
+                        <i class="fa fa-envelope"></i>&nbsp truelip.technocrates@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="copyright">
+                        <p class="footer-gd">Copyright © TRUELIP TECHNOCRATES</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="social-network">
+                        <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script> 
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<!-- Vendor Scripts -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
