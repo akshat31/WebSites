@@ -1,0 +1,474 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>AQUABITA</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />	
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Hind:400,300' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Aladin' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+<!-- animated-css -->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+
+<!--  -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!--  -->
+<!-- animated-css -->
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".branch-gd").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".branch-gd").hasClass("hover")) {
+                    $(this).closest(".branch-gd").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".branch-gd").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+<script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body style="background-image:url(images/texture02.jpg);">
+<!--header-top start here-->
+<div class="top-header">
+	<div class="container">
+		<div class="top-header-main">
+			<div class="col-md-4 top-social wow bounceInLeft" data-wow-delay="0.3s">
+			    <ul>
+			    	<li><h5>Follow Us :</h5></li>
+			    	<li><a href="#"><span class="fb"> </span></a></li>
+			    	<li><a href="#"><span class="tw"> </span></a></li>
+			    	<li><a href="#"><span class="in"> </span></a></li>
+			    	<li><a href="#"><span class="gmail"> </span></a></li>
+			    </ul>
+			</div>
+			<div class="col-md-8 header-address wow bounceInRight" data-wow-delay="0.3s">
+				<ul>
+					<li><span class="phone"> </span> <h6>9302113459</h6></li>
+					<li><span class="phone"> </span> <h6>7509375097</h6></li>
+					<li><span class="email"> </span><h6><a href="mailto:info@example.com">nkpservice@gmail.com</a></h6></li>
+				</ul>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--header-top end here-->
+<!--header start here-->
+	<!-- NAVBAR
+		================================================== -->
+<div class="header">
+	<div class="fixed-header">	
+
+		    <div class="navbar-wrapper">
+		      <div class="container">
+		        <nav class="navbar navbar-inverse navbar-static-top">
+		             <div class="navbar-header">
+			              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			                <span class="sr-only">Toggle navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			              </button>
+			              <div class="logo wow slideInLeft" data-wow-delay="0.1s">
+			                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+			              </div>
+			          </div>
+		            <div id="navbar" class="navbar-collapse collapse">
+		            <nav class="cl-effect-16" id="cl-effect-16">
+		              <ul class="nav navbar-nav">
+		               <li><a class="active" href="index.html" data-hover="Home">Home</a></li>
+		                <li><a href="about.html" data-hover="About">About</a></li>
+						<li><a href="services.html" data-hover="Services">Services</a></li>
+						<li><a href="product.html" data-hover="Products">Products</a></li>
+						<li><a href="gallery.html" data-hover="Gallery">Gallery</a></li>
+						<li><a href="contact.html" data-hover="Contact">Contact</a></li>						
+		              </ul>
+		            </nav>
+
+		            </div>
+		            <div class="clearfix"> </div>
+		             </nav>
+		          </div>
+		           <div class="clearfix"> </div>
+		    </div>
+	 </div>
+</div>
+<!--header end here-->
+<!--banner  start hwew-->
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/banner01_1.jpg" alt="banner01 (1)" title="banner01 (1)" id="wows1_0"/></li>
+		<li><img src="data1/images/banner01_2.jpg" alt="banner01 (2)" title="banner01 (2)" id="wows1_1"/></li>
+		<li><a href="#"><img src="data1/images/banner01_3.jpg" alt="wowslider.com" title="banner01 (3)" id="wows1_2"/></a></li>
+		<li><img src="data1/images/banner01_4.jpg" alt="banner01 (4)" title="banner01 (4)" id="wows1_3"/></li>
+	</ul></div>
+<div class="ws_script" style="position:absolute;left:-99%"><a href="#"></a></div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<!--BANNER END HERE-->
+<!--information start here-->
+
+
+<div class="information">
+	<center><h1 style="color:#042d60;"><b>WELCOME TO <span style="color:#05C2FF;">AQUABITA</span></b></h1></center>
+	<br>
+	<div class="container">
+	<center><img src="images/navimg.png"></center>
+		<div class="information-main">
+		<br>
+		<p align="center">In order to meet the diverse requirements of customers, we are delivering a comprehensive range of RO Water Purifiers. These RO water purifiers offered by us are developed using advanced machinery and sophisticated technology. Along with this, our quality personnel ensure to check these water purifiers using strict measures, so as to ensure their compliance with the highest quality standards and guidelines. These products are ideally installed at offices, homes, food corners, educational institutes and hospitals.</p>
+		<br>
+<!-- 			  <div class="information-grid five-star wow slideInLeft" data-wow-delay="0.3s">
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s1.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Star Hotel</h4>
+			  			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s2.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>services</h4>
+			  			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s4.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Secure</h4>
+			  			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="clearfix"> </div>
+			  </div>
+			  <div class="information-grid wow slideInRight" data-wow-delay="0.3s">
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s3.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Food</h4>
+			  			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s5.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Hotel</h4>
+			  			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="col-md-4 hotel-info">
+			  		<div class="info-left">
+			  			<img src="images/s6.png" alt="">
+			  		</div>
+			  		<div class="info-right">
+			  			<h4>Bell</h4>
+			  			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+			  		</div>
+			  	  <div class="clearfix"> </div>
+			  	</div>
+			  	<div class="clearfix"> </div>
+			  </div> -->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--information end here-->
+<!--leaves start here-->
+<div>
+<div class="leaves" style="background-image: url(video/vid01.gif);background-size: cover;">
+	<div class="container">
+		<div class="leaves-main wow zoomIn" data-wow-delay="0.3s">
+			<h1>WHY CHOOSE US</h1>
+			<h6>100% Friendly services</h6>
+			<p>OVER THE YEARS IN THE INDUSTRY, WE HAVE EARNED AN ENVIABLE REPUTATION AMONG OUR CLIENTS FOR OFFERING BEST QUALITY DRINKING WATER. OUR COMPANY TAKES CARE OF THE FACT THAT ALL THE NEEDS OF OUR CLIENTS ARE MET WITHIN SUITABLE TIMEFRAMES. WE HAVE EARNED RAPID STRIDES IN THE MARKET AND MAINTAIN LONG-TERM CONTACTS WITH OUR CLIENTELE. THERE IS NO DENYING THE FACT THAT WE ARE THE PREFERRED CHOICE BY MANY OF OUR CLIENTS.</p>
+		   <a href="about.html" class="hvr-push">Discover More</a>
+		</div>
+	</div>
+</div>
+</div>
+<!--leaves end here-->
+<!--branches start here-->
+<div class="branches">
+		<div class="branches-main wow zoomIn" data-wow-delay="0.3s">
+			<div class="branches-top">
+				<h3>OUR CLIENTS</h3>
+			</div>
+			<!--  marquee-->
+			<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" class="wow rollIn animated animated" style="visibility: visible; animation-name: rollIn;">
+				<img src="images/demo01.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo02.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo03.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo04.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo05.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo06.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo07.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo08.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo09.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo10.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo11.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo01.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo02.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo03.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo04.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo05.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo06.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo07.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo08.jpg" width="120" height="80" alt="Natural">
+				&nbsp&nbsp&nbsp
+				<img src="images/demo09.jpg" width="120" height="80" alt="Natural">
+				</marquee>
+			<!-- //marquee -->
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+</div>
+<!--branches end here-->
+<div class="branch-text">
+   <div class="container">
+			<span class="quotations"> </span>
+			<p>With an expertise in the domain, we bring forth best quality Commercial Reverse Osmosis Water Purifier. Easy to use and maintain, it is widely demanded in the market. Manufactured using high-grade raw materials sourced from trusted vendors, it is assured of an optimum quality. The whole range of the commercial RO water purifiers offered by us is known for its longer functional life and fine finish.</p>
+  </div>
+</div>
+<!--swiming-->
+<div class="swimming">
+	<div class="container">
+		<div class="swimming-main wow zoomIn" data-wow-delay="0.3s">
+			<div class="swimming-top">
+				<h3>AQUABITA IS BETTER HERE'S WHY</h3>
+			</div>
+			<div class="swimmimg-bot">
+				<div class="col-md-3 swimming-grid">
+					<h4>TASTE</h4>
+					<span class="swim-icon-1"> </span>
+					<h6 class="myfont01">The taste of water is determined by its mineral content – each mineral offers a distinctive flavour. It’s the quantity and combination of minerals naturally found in water that are responsible for a mineral water taste</h6>
+				</div>
+				<div class="col-md-3 swimming-grid">
+					<h4>HEALTH</h4>
+					<span class="swim-icon-2"> </span>
+					<h6 class="myfont01">Mineral water may come from the same source as purified and distilled water and contain a certain amount of trace minerals, including magnesium and calcium. Mineral water offers many health benefits</h6>
+				</div>
+				<div class="col-md-3 swimming-grid">
+					<h4>VALUE</h4>
+					<span class="swim-icon-3"> </span>
+					<h6 class="myfont01">As well as making sure we provide value for money to our customers, and also TOTAL CUSTOMER SATISFACTION and it is total worth your money</h6>
+				</div>
+				<div class="col-md-3 swimming-grid">
+					<h4>SUSTAINABILITY</h4>
+					<span class="swim-icon-4"> </span>
+					<h6 class="myfont01">The sustainability of bottled water has been a consistently studied and embittered subject for a variety of reasons. Issues with its packaging and sourcing have remained contentious</h6>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--swimmg emd here-->
+<!--homegrids start here-->
+<div class="home-block">
+	<div class="container">
+		<div class="home-main">
+			<div class="home-top">
+				<h3>Our Hot Products</h3>
+			</div>
+			<div class="home-bottom  wow bounceInLeft" data-wow-delay="0.3s">
+				<div class="col-md-4 home-grid">
+					<div class="item item-type-move">
+						<a class="item-hover" href="#">						
+							<div class="item-info">
+								<div class="headline">
+									 demo data
+									<div class="line"> </div>
+								</div>
+								<div class="date"> demo data</div>							
+							</div>
+							<div class="mask"> </div>
+					    </a>
+						<div class="item-img">
+								<img src="images/p001.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-4 home-grid">
+					<div class="item item-type-move">
+						<a class="item-hover" href="#">						
+							<div class="item-info">
+								<div class="headline">
+									 demo data
+									<div class="line"> </div>
+								</div>
+								<div class="date"> demo data</div>							
+							</div>
+							<div class="mask"> </div>
+					    </a>
+						<div class="item-img">
+								<img src="images/p001.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 home-grid">
+					<div class="item item-type-move">
+						<a class="item-hover" href="#">						
+							<div class="item-info">
+								<div class="headline">
+									 demo data
+									<div class="line"> </div>
+								</div>
+								<div class="date"> demo data</div>							
+							</div>
+							<div class="mask"> </div>
+					    </a>
+						<div class="item-img">
+								<img src="images/p001.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--home grid end here-->
+<!--footer start here-->
+<div class="footer" style="background-image:url(images/footerbg.png);">
+	<div class="container">
+		<div class="footer-main">
+
+			<div class="col-md-3 ftr-grid wow zoomIn" data-wow-delay="0.3s">
+				<div class="ftr-logo">
+				<h3>ABOUT US</h3>
+				</div>
+				<p> demo data demo data demo data demo data demo data demo data demo data demo data demo data demo data demo data</p>
+				<a href="about.html" class="ftr-btn">Read More</a>
+			</div>
+
+
+			<div class="col-md-3 ftr-grid ftr-rit wow zoomIn" data-wow-delay="0.3s">
+				 <h3>Quick Link</h3>
+				  <ul class="ftr-nav" style="padding-left: 35px">
+				 	<li><a href="index.html">Home</a></li>
+				 	<li><a href="about.html">About</a></li>
+				 	<li><a href="services.html">Services</a></li>
+				 	<li><a href="product.html">Product</a></li>
+				 	<li><a href="gallery.html">Gallery</a></li>
+				 	<li><a href="contact.html">Contact</a></li>
+				 </ul>
+			</div>
+
+			<div class="col-md-3 ftr-grid ftr-rit wow zoomIn" data-wow-delay="0.3s">
+				 <h3>Contact Us</h3>
+				  <ul class="ftr-icons">
+					<li><a href="#"><span class="fa"> </span></a></li>Facebook<br>
+				 	<li><a href="#"><span class="tw"> </span></a></li>Twitter<br>
+				 	<li><a href="#"><span class="link"> </span></a></li>linkdin<br>
+				 	<li><a href="#"><span class="gmail"> </span></a></li>Gmail<br>
+				 </ul>
+			</div>
+
+			<div class="col-md-3 ftr-grid ftr-mid wow zoomIn" data-wow-delay="0.3s" style="line-height: 15px;">
+				 <h3>Address</h3>
+				 <span class="ftr-line flm"> </span>
+				<span style="color: #05C2FF;"><b>BHILAI :</b></span>
+				<p>Vasundhara Nagar(S)</p>
+				<p>Infront Khubchand Baghel Collage</p>
+				<p>GE Road Charoda(C.G.)</p>
+				<br>
+				<span style="color: #05C2FF;"><b>KHAIRAGARH :</b></span>
+				<p>289,Atul Awash</p>
+				<p>Khairagarh(C.G.)</p>
+			</div>
+
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--footer end here-->
+<!--copy rights start here-->
+<div class="copy-right">
+	<div class="container">
+		 <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
+    	    <p class="footer-gd">Copyright © AQUABITA</p>
+    	 </div>
+    </div>
+</div>
+</body>
+</html>
